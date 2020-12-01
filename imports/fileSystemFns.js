@@ -1,5 +1,5 @@
 /**
- * General purpose functions to read files into a variable.
+ * Helper functions related to the file system.
  */
 
  /**

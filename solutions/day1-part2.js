@@ -11,7 +11,7 @@
 // set the number we want to find
 const TARGET = 2020;
 
-const {readLines} = require('../imports/readFiles.js');
+const {readLines} = require('../imports/fileSystemFns.js');
 const INPUT = readLines('../inputs/day1.txt', function(data) {
 	return data
 		.filter((x) => x < TARGET) // remove any greater than or equal to TARGET
