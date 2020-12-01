@@ -22,11 +22,10 @@ const INPUT = readLines('../inputs/day1.txt', function(data) {
 // get start and end indexes
 let i = 0;
 let j = INPUT.length - 1;
+let sum = INPUT[i] + INPUT[j]; // set intial loop var
 
 // loop until sum equals the TARGET
-while ( (INPUT[i] + INPUT[j]) !== TARGET ) {
-	let sum = INPUT[i] + INPUT[j];
-
+while ( sum !== TARGET ) {
 	// if less than TARGET, advance the lower index by 1
 	if ( sum < TARGET ) {
 		i++;
@@ -36,6 +35,8 @@ while ( (INPUT[i] + INPUT[j]) !== TARGET ) {
 	if ( sum > TARGET ) {
 		j--;
 	}
+
+	sum = INPUT[i] + INPUT[j];
 }
 
 // log both found numbers
