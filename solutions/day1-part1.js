@@ -4,11 +4,41 @@
  *
  * From the given list of numbers, find the
  * 2 that sum to 2020 and return their product.
+ * 
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/Day-1---Part-1
  */
 
+// set the number we want to find
+const TARGET = 2020;
+
 const {readLines} = require('../imports/readFiles.js');
-const INPUT = readLines('../inputs/day1.txt', function(input) {
-	return input.sort((a, b) => a - b);
+const INPUT = readLines('../inputs/day1.txt', function(data) {
+	return data
+		.map((x) => parseInt(x)) // ensure each item is an integer
+		.sort((a, b) => a - b) // sort them into numerical order
+		.filter((x) => x < TARGET); // remove any greater than or equal to TARGET
 });
 
-console.log( INPUT );
+// get start and end indexes
+let i = 0;
+let j = INPUT.length - 1;
+
+// loop until sum equals the TARGET
+while ( (INPUT[i] + INPUT[j]) !== TARGET ) {
+	let sum = INPUT[i] + INPUT[j];
+
+	// if less than TARGET, advance the lower index by 1
+	if ( sum < TARGET ) {
+		i++;
+	}
+
+	// if greater than TARGET, retreat the higher index by 1
+	if ( sum > TARGET ) {
+		j--;
+	}
+}
+
+// log both found numbers
+console.log( INPUT[i], INPUT[j] );
+// Answer is their product (multiply 2 numbers together)
+console.log( INPUT[i] * INPUT[j] );
