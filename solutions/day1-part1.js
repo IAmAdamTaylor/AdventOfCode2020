@@ -26,12 +26,14 @@ let sum = INPUT[i] + INPUT[j]; // set intial loop var
 
 // loop until sum equals the TARGET
 while ( sum !== TARGET ) {
-	// if less than TARGET, advance the lower index by 1
+	// if less than TARGET, increment the lower index by 1
+	// to give a higher sum
 	if ( sum < TARGET ) {
 		i++;
 	}
 
-	// if greater than TARGET, retreat the higher index by 1
+	// if greater than TARGET, decrement the higher index by 1
+	// to give a lower sum
 	if ( sum > TARGET ) {
 		j--;
 	}
