@@ -14,9 +14,9 @@ const TARGET = 2020;
 const {readLines} = require('../imports/readFiles.js');
 const INPUT = readLines('../inputs/day1.txt', function(data) {
 	return data
+		.filter((x) => x < TARGET) // remove any greater than or equal to TARGET
 		.map((x) => parseInt(x)) // ensure each item is an integer
-		.sort((a, b) => a - b) // sort them into numerical order
-		.filter((x) => x < TARGET); // remove any greater than or equal to TARGET
+		.sort((a, b) => a - b); // sort them into numerical order
 });
 
 // get start and end indexes
