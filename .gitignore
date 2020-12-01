@@ -1,0 +1,8 @@
+# Ignore Mac hidden files
+.AppleDouble
+.DS_Store
+
+# Ignore general files, backups and database
+*.bak
+*.sql
+node_modules
