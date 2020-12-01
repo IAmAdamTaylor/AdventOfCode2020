@@ -27,18 +27,20 @@ let sum = INPUT[i] + INPUT[j] + INPUT[k]; // set intial loop var
 
 // loop until sum equals the TARGET
 while ( sum !== TARGET ) {
-	// if less than TARGET, advance one of the lower indexes by 1
+	// if less than TARGET, increment one of the lower indexes by 1
+	// to give a higher sum
 	if ( sum < TARGET ) {
 		if ( j - i === 1 ) {
-			// advance j when it is adjacent to i
+			// increment j when it is adjacent to i
 			j++;
 		} else {
-			// otherwise advance i (move closer to j)
+			// otherwise increment i (move closer to j)
 			i++;
 		}
 	}
 
-	// if greater than TARGET, retreat the higher index by 1
+	// if greater than TARGET, decrement the higher index by 1
+	// to give a lower sum
 	if ( sum > TARGET ) {
 		k--;
 	}
