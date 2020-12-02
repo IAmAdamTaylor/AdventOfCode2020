@@ -5,7 +5,7 @@
  * Given a list of passwords and their conditions
  * find the number of valid passwords.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/Day-2---Part-1
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/Day-2---Part-2
  */
 
 const {readLines} = require('../imports/fileSystemFns.js');
