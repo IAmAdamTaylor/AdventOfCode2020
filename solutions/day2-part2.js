@@ -1,6 +1,6 @@
 /**
  * Advent of Code 2020
- * Day 2 - Part 1
+ * Day 2 - Part 2
  *
  * Given a list of passwords and their conditions
  * find the number of valid passwords.
