@@ -7,7 +7,7 @@
  * down to the bottom, making steps of 
  * right 3, down 1 each time
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/08.-Day-3-Part-1
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/3.1:-Day-3-Part-1
  */
 
 const {readLines} = require('adventOfCode');

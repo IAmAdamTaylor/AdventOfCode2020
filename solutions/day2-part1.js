@@ -5,7 +5,7 @@
  * Given a list of passwords and their conditions
  * find the number of valid passwords.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/05.-Day-2-Part-1
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/2.1:-Day-2-Part-1
  */
 
 const {readLines} = require('adventOfCode');

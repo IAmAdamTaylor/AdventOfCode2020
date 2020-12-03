@@ -5,7 +5,7 @@
  * From the given list of numbers, find the
  * 3 that sum to 2020 and return their product.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/04.-Day-1-Part-2
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/1.2:-Day-1-Part-2
  */
 
 // set the number we want to find
