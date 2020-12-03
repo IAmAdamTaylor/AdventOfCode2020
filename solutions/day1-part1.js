@@ -5,14 +5,14 @@
  * From the given list of numbers, find the
  * 2 that sum to 2020 and return their product.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/Day-1---Part-1
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/03.-Day-1-Part-1
  */
 
 // set the number we want to find
 const TARGET = 2020;
 
-const {readLines} = require('../imports/fileSystemFns.js');
-const INPUT = readLines('../inputs/day1.txt', function(data) {
+const {readLines} = require('adventOfCode');
+const INPUT = readLines('inputs/day1.txt', function(data) {
 	return data
 		.filter((x) => x < TARGET) // remove any greater than or equal to TARGET
 		.map((x) => parseInt(x)) // ensure each item is an integer

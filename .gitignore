@@ -5,4 +5,5 @@
 # Ignore general files, backups and database
 *.bak
 *.sql
-node_modules
+# Only ignore node_modules at root
+/node_modules

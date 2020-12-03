@@ -5,11 +5,11 @@
  * Given a list of passwords and their conditions
  * find the number of valid passwords.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/Day-2---Part-2
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/06.-Day-2-Part-2
  */
 
-const {readLines} = require('../imports/fileSystemFns.js');
-const INPUT = readLines('../inputs/day2.txt', function(data) {
+const {readLines} = require('adventOfCode');
+const INPUT = readLines('inputs/day2.txt', function(data) {
 	// map each item to a new entry data structure
 	/**
 	 * entry:
