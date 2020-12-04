@@ -9,7 +9,7 @@
  */
 
 const {readLines} = require('adventOfCode');
-const INPUT = readLines('inputs/day2.txt', function(data) {
+const INPUT = readLines('inputs/day2.txt', (data) => {
 	// map each item to a new entry data structure
 	/**
 	 * entry:
@@ -20,7 +20,7 @@ const INPUT = readLines('inputs/day2.txt', function(data) {
 	 *		password: 'abcde'
 	 * }
 	 */
-	let entries = data.map((item) => {
+	let entries = data.filter((x) => x).map((item) => {
 		let pattern = /^(\d+)-(\d+)\s([a-z]{1}):\s([a-z]+)$/;
 		let matches = item.match(pattern);
 

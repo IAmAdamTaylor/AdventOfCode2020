@@ -12,9 +12,11 @@
 const TARGET = 2020;
 
 const {readLines} = require('adventOfCode');
-const INPUT = readLines('inputs/day1.txt', function(data) {
+const INPUT = readLines('inputs/day1.txt', (data) => {
 	return data
-		.filter((x) => x < TARGET) // remove any greater than or equal to TARGET
+		// remove any falsey values
+		// remove any greater than or equal to TARGET
+		.filter((x) => x && x < TARGET) 
 		.map((x) => parseInt(x)) // ensure each item is an integer
 		.sort((a, b) => a - b); // sort them into numerical order
 });

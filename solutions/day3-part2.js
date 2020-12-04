@@ -17,7 +17,9 @@
  */
 
 const {readLines} = require('adventOfCode');
-const INPUT = readLines('inputs/day3.txt');
+const INPUT = readLines('inputs/day3.txt', (data) => {
+	return data.filter((x) => x);
+});
 
 // get line length - assumes all lines are same length
 const LINE_LEN = INPUT[0].length;
