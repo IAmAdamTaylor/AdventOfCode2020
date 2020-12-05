@@ -2,7 +2,9 @@
  * Advent of Code 2020
  * Day 5 - Part 1
  *
- * 
+ * From each sequence of seat characters
+ * find the row, column and seat ID it represents
+ * and then return the highest seat ID found.
  * 
  * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/5.1:-Day-5-Part-1
  */
