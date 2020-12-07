@@ -75,23 +75,6 @@ const INPUT = readLines('inputs/day7.txt', (data) => {
 	return bags;
 });
 
-// let i = 0;
-// function getAncestors( bag ) {
-// 	let ancestors = [];
-
-// 	if ( !INPUT[bag] || !INPUT[bag].length ) {
-// 		return ancestors;
-// 	}
-	
-// 	let parents = INPUT[bag];
-
-// 	parents.forEach((bagType) => {
-// 		ancestors = ancestors.concat(getAncestors(bagType));
-// 	});
-
-// 	return ancestors;
-// }
-
 function getAncestors( bag ) {
 	// base case
 	if ( !INPUT[bag] || !INPUT[bag].length ) {
