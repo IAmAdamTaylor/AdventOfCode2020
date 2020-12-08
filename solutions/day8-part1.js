@@ -20,7 +20,7 @@ const INPUT = readLines('inputs/day8.txt', (data) => {
  * @return {Integer} The accumulator when a duplicate 
  *                   instruction is reached.
  */
-function getInfLoop() {
+function runProgram() {
 	// set loop variables
 	let acc = 0;
 	let i = 0;
@@ -34,6 +34,7 @@ function getInfLoop() {
 		// if the sizes match, we've been on this line before
 		// this is the duplicate, so return
 		if ( visitedLines.size === size ) {
+			console.log( 'duped instruction' );
 			return acc;
 		}
 
@@ -61,7 +62,8 @@ function getInfLoop() {
 	}
 
 	// fail safe if the loop exits and makes it this far
+	console.log( 'reached end' );
 	return acc;
 }
 
-console.log( getInfLoop() );
+console.log( runProgram() );
