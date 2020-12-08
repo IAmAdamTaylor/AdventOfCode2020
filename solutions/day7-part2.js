@@ -5,7 +5,7 @@
  * Using the rules given, find the number of bags
  * that can contain at least 1 shiny gold bag.
  * 
- * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/7.1:-Day-7-Part-1
+ * @see https://github.com/IAmAdamTaylor/AdventOfCode2020/wiki/7.2:-Day-7-Part-2
  */
 
 const {readLines} = require('adventOfCode');
