@@ -37,8 +37,6 @@ let answer = (() => {
 		let num = parseInt(INPUT[i]);
 		let preamble = INPUT.slice(i - 25, i);
 
-		console.log( enumSums(preamble).length );
-
 		if ( !enumSums(preamble).includes(num) ) {
 			return num;
 		}
@@ -48,4 +46,4 @@ let answer = (() => {
 // export part 1 for use in part 2
 module.exports.ANSWER = answer;
 
-console.log( answer );
+console.log( 'Part 1:', answer );
