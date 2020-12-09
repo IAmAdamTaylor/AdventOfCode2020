@@ -62,8 +62,7 @@ function runProgram() {
 	}
 
 	// fail safe if the loop exits and makes it this far
-	console.log( 'reached end' );
-	return acc;
+	return false;
 }
 
 console.log( runProgram() );
